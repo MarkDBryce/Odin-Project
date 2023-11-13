@@ -3,18 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="global.js"></script>
+    <script src="global.js" defer></script>
+    <script src="./assets/javscript/shoppingList.js" defer></script>
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="https://use.typekit.net/jyy4bte.css">
+    <link rel="stylesheet" href="./assets/stylesheets/shoppingList.css">
     <link rel="icon" type="image/x-icon" href="./assets\images\favicon-32x32.png">
     <title>The Odin Project</title>
     <meta property="description" content="Putting all The Odin Project tutorials in to practice">
     <meta property="og:title" content="The Odin Project - Theory into Practice">
     <meta name="robots" content="index follow">
+    <script>
+      /* To prevent Firefox FOUC */
+      let FF_FOUC_FIX;
+    </script>
 </head>
 <body>
-    <div class="container">
-        <p>test</p>
+  <!-- Shopping List Section -->
+    <div class="shoppingList">
+      <h1>My shopping list</h1>
+      <div>
+        <label for="item">Enter a new item:</label>
+        <input type="text" name="item" id="itemToAdd">
+        <button id="addButton" class="btn btn-primary">Add item</button>
+      </div>
+      <ul id="listOfItems"></ul>
+      <div id="itemCountMsg" class="itemCountMsg">
+        <p class="totalItemsText" id="totalItemsText">Total Items:<span id="itemCount"></span></p>
+      </div>
     </div>
+
+    <div></div>
+
 </body>
 </html>

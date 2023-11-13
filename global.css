@@ -7,6 +7,8 @@ html {
 body {
     background-color: #f5f3f7;
     font-size: 1.6rem;
+    font-family: 'greycliff-cf', sans-serif;
+    color: #1c1733;
 }
 
 h1, h2, h3, h4, h5 {
@@ -15,4 +17,37 @@ h1, h2, h3, h4, h5 {
 
 p, span, a {
     font-family: 'greycliff-cf', sans-serif;
+    font-size: 1.6rem;
 }
+
+li {
+    margin-bottom: 10px;
+  }
+
+  li button {
+    margin-left: 1em;
+  }
+
+.btn {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+}
+
+.btn-primary {
+    background-color: #4d408f;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #17bfba;
+}
+
+.btn-primary:hover, .btn-primary::selection {
+    background-color: #3e3372;
+}
+
+.btn-secondary:hover, .btn-secondary::selection {
+    background-color: #139c98;
+} 
