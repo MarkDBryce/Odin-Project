@@ -21,6 +21,10 @@
     </script>
 </head>
 <body>
+  <div class="header">
+    <h1 class="pageTitle">The Odin Project - Activities</h1>
+  </div>
+  <div class="container main">
   <!-- Shopping List Section -->
     <div class="shoppingList">
       <h1>My shopping list</h1>
@@ -34,8 +38,50 @@
         <p class="totalItemsText" id="totalItemsText">Total Items:<span id="itemCount"></span></p>
       </div>
     </div>
-
-    <div></div>
-
+    <!-- Rock Paper Scissors Section -->
+    <div class="rockPaperScissors" id="rockPaperScissors">
+        <h1>Rock Paper Scissors</h1>
+        <div class="gameSection" id="gameSection">
+        <div class="userChoices">
+          <div class="gameCard userRock" id="userRock">
+            <img src="assets\images\rock.svg">
+            <h3>Rock</h3>
+          </div>
+          <div class="gameCard userPaper" id="userPaper">
+            <img src="assets\images\paper.svg">
+            <h3>Paper</h3>
+          </div>
+          <div class="gameCard userScissors" id="userScissors">
+            <img src="assets\images\scissors.svg">
+            <h3>Scissors</h3>
+          </div>
+        </div>
+        <div class="vs"><h1 id="vs">Vs</h1></div>
+        <div class="computerChoices">
+          <div class="gameCard computerChoice" id="computerChoice">
+            <img src="assets\images\question.svg" id="computerChoiceImage">
+            <h3 id="computerChoiceText">???</h3>
+          </div>
+        </div>
+      </div>
+        <div class="divider" id="divider"></div>
+        <div class="gameResults">
+          <div class="yourScoreContainer">
+            <h3>YOUR SCORE</h3>
+            <div class="yourScore" id="yourScore">
+              <h2 id="displayUserScore"></h2>
+            </div>
+          </div>
+          <div class="computerScoreContainer">
+            <h3>COMPUTER SCORE</h3>
+            <div class="computerScore" id="computerScore">
+              <h2 id="displayComputerScore"></h2>
+            </div>
+          </div>
+        </div>
+        <button class="btn gameButton" id="resetButton">RESET GAME</button>
+    </div>
+  </div>
+  
 </body>
 </html>

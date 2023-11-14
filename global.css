@@ -1,4 +1,8 @@
 
+/* TEMPORARILY HIDE SECTIONS */
+
+
+
 html {
     /* 62.5% of 16px browser font size is 10px */
     font-size: 62.5%;
@@ -44,6 +48,10 @@ li {
     background-color: #17bfba;
 }
 
+.btn-tertiary {
+    background-color: #fff;
+}
+
 .btn-primary:hover, .btn-primary::selection {
     background-color: #3e3372;
 }
@@ -51,3 +59,17 @@ li {
 .btn-secondary:hover, .btn-secondary::selection {
     background-color: #139c98;
 } 
+
+.container.main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+}
+
