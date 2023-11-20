@@ -1,0 +1,94 @@
+
+.formPage {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    background-image: url('/assets/images/notebook.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.formPage h2 {
+    font-family: 'greycliff-cf', sans-serif;
+    font-weight: bold;
+}
+
+.rightColumn {
+    background-color: #f5f3f7;;
+}
+
+.logoArea {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: calc(30%);
+    background-color: rgba(255,255,255,0.5);
+    padding: 2.5rem 0 2rem;
+}
+
+.flowerLogo {
+    max-width: 100px;
+}
+
+.logoArea h1 {
+    display: inline;
+    padding-left: 2rem;
+}
+
+.openingText {
+    padding: 3rem 5rem;
+}
+
+h2.subtext {
+    font-weight: normal;
+}
+
+.form {
+    margin: 0 5rem;
+}
+
+legend {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 2rem;
+
+}
+label {
+    display: block;
+    font-size: 1.4rem;
+}
+
+.formColumns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.formColumnLeft, .formColumnRight {
+    width: 40%;
+}
+
+input {
+    border: 1px solid rgba(212,212,212,0.5);
+    padding: 1rem;
+    margin-bottom: 3rem;
+    width: 80%;
+}
+
+input:focus {
+    outline: 0;
+}
+
+fieldset {
+    border: none;
+}
+
+.formInputs {
+    background-color: #fff;
+    padding: 4rem 0;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
