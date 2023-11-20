@@ -19,8 +19,47 @@
     </head>
 <body>
     <div class="header" id="header"></div>
-    <div class="container">
-      
+    <div class="container formPage">
+      <div class="leftColumn">
+        <div class="logoArea">
+          <img src="assets\images\flower.png" class="flowerLogo">
+          <h1>MB Design</h1>
+        </div>
+      </div>
+      <div class="rightColumn">
+        <div class="openingText">
+          <h2>This is just some introductory text. Idea is the recreate a form page, as seen on Odin Project.</h2>
+          <h2 class="subtext">Not sure what else there is to say!?</h2>
+        </div>
+        <div class="formInputs">
+          <div class="form" id="form" action="#">
+            <legend>Let's do this!</legend>
+              <div class="formColumns">
+                <div class="formColumnLeft">
+                  <label for="fName" data-lpignore="true">FIRST NAME</label>
+                  <input type="text" id="fName" name="fName">
+                  <label for="email">EMAIL*</label>
+                  <input type="email" id="email" name="email" required>
+                  <label for="password">PASSWORD</label>
+                  <input type="password" id="password" name="password">
+                </div>
+            <div class="formColumnRight">
+              <label for="lName">LAST NAME</label>
+              <input type="text" id="lName" name="lName">
+              <label for="number">PHONE NUMBER</label>
+              <input type="number" id="number" name="number">
+              <label for="confirmPassword">CONFIRM PASSWORD</label>
+              <input type="password" id="confirmPassword" name="confirmPassword">
+            </div>
+            </div>
+            <div class="submitArea">
+              <button type="submit" class="btn btn-primary">Create Account</button>
+              <p>Already have an account? <a href="#">Log in</a></p> 
+            </div>
+            
+          </div>
+        </div>
+      </div>
     </div>
 </body>
 </html>
