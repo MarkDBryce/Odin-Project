@@ -36,3 +36,8 @@ let link5 = document.createElement('a');
 link5.setAttribute("href", "calculator.html");
 link5.textContent = "Calculator";
 nav.appendChild(link5);
+
+let link6 = document.createElement('a');
+link6.setAttribute("href", "form.html");
+link6.textContent = "HTML Form";
+nav.appendChild(link6);
