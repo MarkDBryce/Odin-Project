@@ -68,7 +68,6 @@ function operate(num1, num2, prevOp) {
     console.log(value1);
 }
 
-
 function digitsAfterDecimal(value) {
     let afterDecimal = value.toString().split('.')[1] || '';
     return afterDecimal.length;
