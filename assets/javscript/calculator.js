@@ -8,6 +8,7 @@ let value2 = 0;
 let total = 0;
 let op = "";
 let prevOp = "";
+let power = true;
 
 let displayArea = document.querySelector('#displayArea');
 displayArea.textContent = isDecimal(value1);
@@ -26,9 +27,12 @@ clearButtons.forEach((button) => {
 let numKeys = document.querySelectorAll('#num');
 numKeys.forEach((key) => {
     key.addEventListener("click", () => {
+        if (!power) {
+            power = true;
+        }
         value2 = Number(`${value2}${key.textContent}`);
         displayArea.textContent = Number(value2);
-    })
+    });
 })
 
 let opKeys = document.querySelectorAll('#operation');
@@ -39,7 +43,6 @@ opKeys.forEach((key) => {
             value1 = value2;
             displayArea.textContent = isDecimal(value1);
             value2 = 0;
-            console.log(value1);
         } else {
             operate(value1, value2, prevOp);
             prevOp = key.textContent;
@@ -75,7 +78,6 @@ function operate(num1, num2, prevOp) {
     } else {
         displayArea.textContent = isDecimal(value1);
     };
-    console.log(value1);
 }
 
 function digitsAfterDecimal(value) {
@@ -91,3 +93,44 @@ function isDecimal(numToCheck) {
         return Number(numToCheck);
     }
 }
+
+let deleteButton = document.querySelector('#del');
+deleteButton.addEventListener("click", () => {
+    let tempValue = value2.toString().slice(0,-1);
+    value2 = Number(tempValue);
+    displayArea.textContent = value2;
+})
+
+let onOffButtons = document.querySelectorAll('#onOff');
+onOffButtons.forEach((onOff) => {
+    onOff.addEventListener("click", () => {
+        power = !power;
+        turnOnOff(power);
+    })
+})
+
+function turnOnOff(power) {
+if (!power) {
+    let tempDisplay = value2.toString();
+    tempDisplay = "";
+    displayArea.textContent = tempDisplay;
+    value1 = 0;
+    value2 = 0;
+    prevOp = "";
+} else {
+    displayArea.textContent = value2;
+};
+}
+
+let allKeys = document.querySelectorAll('.key');
+allKeys.forEach((keyPress) => {
+    keyPress.addEventListener("click", () => {
+        keyPress.classList.add('keyPressed');  
+        setTimeout(function() {
+            keyPress.classList.remove('keyPressed');
+        }, 100);
+              
+    })
+})
+
+

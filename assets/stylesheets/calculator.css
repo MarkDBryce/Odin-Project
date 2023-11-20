@@ -15,6 +15,7 @@
     align-content: center;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    min-height: 48px;
 }
 
 .keysArea {
@@ -37,6 +38,14 @@
     font-weight: 500;
 }
 
+.key.emptyKey {
+    background-color: lightcoral;
+}
+
+.key.emptyKey:hover {
+    cursor: default;
+}
+
 .key:hover {
     cursor: pointer;
 }
@@ -45,5 +54,10 @@
     font-weight: 700;
 }
 
+.iconImage img {
+    width: 1.7rem;
+}
 
-
+.keyPressed {
+    background-color: #f5f3f7;
+}
