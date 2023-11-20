@@ -1,9 +1,9 @@
 
-/* TEMPORARILY HIDE SECTIONS */
+/* TEMPORARILY HIDE SECTIONS
 .shoppingList, .etchASketch, .rockPaperScissors {
     display: none !important;
 }
-
+*/
 
 html {
     /* 62.5% of 16px browser font size is 10px */
@@ -69,6 +69,7 @@ li {
     max-width: 1240px;
     margin: 0 auto;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .header {
@@ -76,3 +77,23 @@ li {
     text-align: center;
 }
 
+.container.main.nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2.3rem 0 2rem;
+    border-top: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+    margin-bottom: 3rem;
+}
+
+.nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav a:hover, .nav a::selection {
+    text-decoration: underline;
+}

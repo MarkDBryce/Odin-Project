@@ -4,16 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="global.js" defer></script>
-    <script src="./assets/javscript/shoppingList.js" defer></script>
-    <script src="./assets/javscript/rockPaperScissors.js" defer></script>
-    <script src="./assets/javscript/sketch.js" defer></script>
-    <script src="./assets/javscript/calculator.js" defer></script>
+    <script src="assets/javscript/index.js" defer></script>
     <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="assets\stylesheets\index.css">
     <link rel="stylesheet" href="https://use.typekit.net/jyy4bte.css">
-    <link rel="stylesheet" href="./assets/stylesheets/shoppingList.css">
-    <link rel="stylesheet" href="./assets/stylesheets/rockPaperScissors.css">
-    <link rel="stylesheet" href="./assets/stylesheets/sketch.css">
-    <link rel="stylesheet" href="./assets/stylesheets/calculator.css">
     <link rel="icon" type="image/x-icon" href="./assets\images\favicon-32x32.png">
     <title>The Odin Project</title>
     <meta property="description" content="Putting all The Odin Project tutorials in to practice">
@@ -25,98 +19,6 @@
     </script>
 </head>
 <body>
-  <div class="header" id="header">
-    <h1 class="pageTitle">The Odin Project - Activities</h1>
-  </div>
-  <div class="container main">
-  <!-- Shopping List Section -->
-    <div class="shoppingList">
-      <h1>My shopping list</h1>
-      <div>
-        <label for="item">Enter a new item:</label>
-        <input type="text" name="item" id="itemToAdd">
-        <button id="addButton" class="btn btn-primary">Add item</button>
-      </div>
-      <ul id="listOfItems"></ul>
-      <div id="itemCountMsg" class="itemCountMsg">
-        <p class="totalItemsText" id="totalItemsText">Total Items:<span id="itemCount"></span></p>
-      </div>
-    </div>
-    <!-- Rock Paper Scissors Section -->
-    <div class="rockPaperScissors" id="rockPaperScissors">
-        <h1>Rock Paper Scissors</h1>
-        <div class="gameSection" id="gameSection">
-        <div class="userChoices">
-          <div class="gameCard userRock" id="userRock">
-            <img src="assets\images\rock.svg">
-            <h3>Rock</h3>
-          </div>
-          <div class="gameCard userPaper" id="userPaper">
-            <img src="assets\images\paper.svg">
-            <h3>Paper</h3>
-          </div>
-          <div class="gameCard userScissors" id="userScissors">
-            <img src="assets\images\scissors.svg">
-            <h3>Scissors</h3>
-          </div>
-        </div>
-        <div class="vs"><h1 id="vs">Vs</h1></div>
-        <div class="computerChoices">
-          <div class="gameCard computerChoice" id="computerChoice">
-            <img src="assets\images\question.svg" id="computerChoiceImage">
-            <h3 id="computerChoiceText">???</h3>
-          </div>
-        </div>
-      </div>
-        <div class="divider" id="divider"></div>
-        <div class="gameResults">
-          <div class="yourScoreContainer">
-            <h3>YOUR SCORE</h3>
-            <div class="yourScore" id="yourScore">
-              <h2 id="displayUserScore"></h2>
-            </div>
-          </div>
-          <div class="computerScoreContainer">
-            <h3>COMPUTER SCORE</h3>
-            <div class="computerScore" id="computerScore">
-              <h2 id="displayComputerScore"></h2>
-            </div>
-          </div>
-        </div>
-        <button class="btn gameButton" id="resetButton">RESET GAME</button>
-    </div>
-    <!-- Etch a Sketch -->
-  <div class="etchASketch">
-    <h1 id="sketchTitle">Etch-a-Sketch</h1>
-    <button class="btn btn-primary" id="sketchButton">Start a new grid</button>
-    <div class="sketch" id="sketchGrid"></div>
-  </div>
-  <div class="container calculator" id="calculator">
-    <div class="displayArea" id="displayArea"></div>
-    <div class="keysArea">
-      <div class="key iconImage" id="onOff"><img src="assets\images\power-off-solid.svg"></div>
-      <div class="key" id="num">7</div>
-      <div class="key" id="num">8</div>
-      <div class="key" id="num">9</div>
-      <div class="key operator" id="operation">/</div>
-      <div class="key" id="del">DEL</div>
-      <div class="key" id="num">4</div>
-      <div class="key" id="num">5</div>
-      <div class="key" id="num">6</div>
-      <div class="key operator" id="operation">x</div>
-      <div class="key" id="clear">AC</div>
-      <div class="key" id="num">1</div>
-      <div class="key" id="num">2</div>
-      <div class="key" id="num">3</div>
-      <div class="key operator" id="operation">-</div>
-      <div class="key emptyKey" id=""></div>
-      <div class="key" id="num">0</div>
-      <div class="key" id="decimal">.</div>
-      <div class="key operator" id="operation">=</div>
-      <div class="key operator" id="operation">+</div>
-    </div>
-  </div>
-  </div>
-  
+  <div class="header" id="header"></div>
 </body>
 </html>

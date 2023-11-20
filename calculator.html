@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="global.js" defer></script>
+    <script src="./assets/javscript/calculator.js" defer></script>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jyy4bte.css">
+    <link rel="stylesheet" href="./assets/stylesheets/calculator.css">
+    <link rel="icon" type="image/x-icon" href="./assets\images\favicon-32x32.png">
+    <title>Calculator</title>
+    <meta property="description" content="A basic calculator coded in JavaScript">
+    <meta property="og:title" content="The Odin Project - A basic calculator">
+    <meta name="robots" content="noindex nofollow">
+    <script>
+      /* To prevent Firefox FOUC */
+      let FF_FOUC_FIX;
+    </script>
+</head>
+<body>
+  <div class="header" id="header"></div>
+  <div class="container main">
+  <div class="container calculator" id="calculator">
+    <div class="displayArea" id="displayArea"></div>
+    <div class="keysArea">
+      <div class="key iconImage" id="onOff"><img src="assets\images\power-off-solid.svg"></div>
+      <div class="key" id="num">7</div>
+      <div class="key" id="num">8</div>
+      <div class="key" id="num">9</div>
+      <div class="key operator" id="operation">/</div>
+      <div class="key" id="del">DEL</div>
+      <div class="key" id="num">4</div>
+      <div class="key" id="num">5</div>
+      <div class="key" id="num">6</div>
+      <div class="key operator" id="operation">x</div>
+      <div class="key" id="clear">AC</div>
+      <div class="key" id="num">1</div>
+      <div class="key" id="num">2</div>
+      <div class="key" id="num">3</div>
+      <div class="key operator" id="operation">-</div>
+      <div class="key emptyKey" id=""></div>
+      <div class="key" id="num">0</div>
+      <div class="key" id="decimal">.</div>
+      <div class="key operator" id="operation">=</div>
+      <div class="key operator" id="operation">+</div>
+    </div>
+  </div>
+  </div>
+  
+</body>
+</html>
