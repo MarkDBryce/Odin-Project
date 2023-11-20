@@ -49,6 +49,16 @@ opKeys.forEach((key) => {
     });
 })
 
+let decimalButton = document.querySelector('#decimal');
+decimalButton.addEventListener("click", () => {
+    tempValue2 = value2.toString();
+    if (!tempValue2.includes('.')) {
+    tempValue2 += '.';
+    value2 = tempValue2;
+    displayArea.textContent = value2;
+    };
+})
+
 function operate(num1, num2, prevOp) {
     if (prevOp === '+') {
         value1 = addition(num1,num2);
@@ -67,7 +77,6 @@ function operate(num1, num2, prevOp) {
     };
     console.log(value1);
 }
-
 
 function digitsAfterDecimal(value) {
     let afterDecimal = value.toString().split('.')[1] || '';
