@@ -96,3 +96,20 @@ input[type=submit] {
 .deleteIcon:hover {
     opacity: 1;
 }
+
+.allBookRead {
+    padding: 1.4rem 0 0.2rem 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.bookReadBg {
+    background-color: #c7b5fa;
+}
+
+.bookNotReadBg {
+    background-color: #ff874f;
+}

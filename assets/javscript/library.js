@@ -12,6 +12,14 @@ Book.prototype.info = function() {
     return (`${this.title} by ${this.author}, ${this.pages} pages, ${this.read}.`);
 }
 
+Book.prototype.changeRead = function() {
+    if (this.read === "read") {
+        this.read = "not read";
+    } else {
+        this.read = "read";
+    }
+}
+
 function addBookToLibrary(title, author, pages, read, imageLink) {
     let bookToAdd = new Book(title, author, pages, read, imageLink);
     myLibrary.push(bookToAdd);
@@ -54,10 +62,26 @@ for (book of myLibrary) {
     bookImage.setAttribute("src", book.imageLink);
     deleteIcon.setAttribute("src", "assets/images/trash-solid.svg" );
     deleteIcon.dataset.ref = myLibrary.indexOf(book);
+    bookReadBg.classList.add('allBookRead');
+    if (bookRead.textContent === 'read')
+    {bookReadBg.classList.add('bookReadBg');
+    } else {
+        bookReadBg.classList.add('bookNotReadBg');
+    };
     deleteIcon.addEventListener ("click", () => {
         myLibrary.splice([deleteIcon.dataset.ref],1);
         removeExistingLibrary(displayBooks);
         updateBooks();
+    })
+    bookRead.dataset.ref = myLibrary.indexOf(book);
+    bookRead.addEventListener("click", () => {
+        if (myLibrary[bookRead.dataset.ref].read === "read") {
+            myLibrary[bookRead.dataset.ref].read = "not read";
+        } else {
+            myLibrary[bookRead.dataset.ref].read = "read";
+        }
+        removeExistingLibrary(displayBooks);
+        updateBooks(); 
     })
 };
 }
