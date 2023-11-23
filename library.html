@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="global.js" defer></script>
+        <script src="./assets/javscript/library.js" defer></script>
+        <link rel="stylesheet" href="global.css">
+        <link rel="stylesheet" href="https://use.typekit.net/jyy4bte.css">
+        <link rel="stylesheet" href="./assets/stylesheets/library.css">
+        <link rel="icon" type="image/x-icon" href="./assets\images\favicon-32x32.png">
+        <title>Library</title>
+        <meta property="description" content="A basic calculator coded in JavaScript">
+        <meta property="og:title" content="The Odin Project - A basic calculator">
+        <meta name="robots" content="noindex nofollow">
+        <script>
+          /* To prevent Firefox FOUC */
+          let FF_FOUC_FIX;
+        </script>
+    </head>
+<body>
+    <div class="header" id="header"></div>
+    <div class="container">
+        <div class="displayArea">
+            <div class="sidebar">
+                <form class="addBookForm" id="addBookForm" action="">
+                    <h4>Add a book to the library...</h4>
+                    <label for="bookTitle">Title:*</label>
+                    <input type="text" id="bookTitle" name="bookTitle" required>
+                    <label for="bookAuthor">Author:</label>
+                    <input type="text" id="bookAuthor" name="bookAuthor">
+                    <label for="bookPages" name="bookPages">Pages:</label>
+                    <input type="text" id="bookPages" name="bookPages">
+                    <label for="bookImage" name="bookImage">Image URL:</label>
+                    <input type="text" name="bookImage" id="bookImage" placeholder="https://" value="">
+                    <p>Have you read it?</p>
+                    <input type="radio" name="bookRead" id="yes" value="read" checked="checked">
+                    <label for="yes">Yes</label><br>
+                    <input type="radio" name="bookRead" id="no" value="not read">
+                    <label for="yes">No</label><br>
+                    <input type="submit" value="Submit" class="btn btn-primary" id="bookSubmitButton">
+                </form>
+            </div>
+            <div class="displayBooks" id="displayBooks">
+                <h1>My Library</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

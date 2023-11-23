@@ -41,3 +41,8 @@ let link6 = document.createElement('a');
 link6.setAttribute("href", "form.html");
 link6.textContent = "HTML Form";
 nav.appendChild(link6);
+
+let link7 = document.createElement('a');
+link7.setAttribute("href", "library.html");
+link7.textContent = "Library";
+nav.appendChild(link7);
