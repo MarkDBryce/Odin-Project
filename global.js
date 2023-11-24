@@ -46,3 +46,8 @@ let link7 = document.createElement('a');
 link7.setAttribute("href", "library.html");
 link7.textContent = "Library";
 nav.appendChild(link7);
+
+let link8 = document.createElement('a');
+link8.setAttribute("href", "ticTacToe.html");
+link8.textContent = "Tic-tac-toe";
+nav.appendChild(link8);
