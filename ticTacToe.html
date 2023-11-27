@@ -20,6 +20,55 @@
 </head>
 <body>
     <div class="header" id="header"></div>
+    <div class="introScreen" id="introScreen">
+      <h1>Tic Tac Toe</h1>
+      <form class="introForm" id="introForm" action="#">
+        <div class="formSection">
+          <div class="playerOneSection">
+            <label for="playerOneName">Player One</label>
+            <input type="text" id="playerOneName" name="playerOneName" placeholder="Enter name...">
+            <div><label for="playerOneMarker">Marker</label></div>
+            <div class="markers">
+            <div class="marker" id="playerOneX" data-marker="x"><p>X</p></div>
+            <div class="marker notChosen" id="playerOneO" data-marker="o"><p>O</p></div>
+          </div>
+          </div>
+          <div class="vs"><p>Vs</p></div>
+          <div class="playerTwoSection">
+            
+            <div class="nameAndAI">
+              <div class="name2">
+                <label for="playerTwoName">Player Two</label>
+              <input type="text" id="playerTwoName" name="playerTwoName" placeholder="Enter name...">
+            </div>
+            <div class="ai">
+              <label for="checkAI">AI?</label>
+              <div class="AICheckboxEmpty" id="AICheckbox"></div>
+          </div>
+          </div>
+            <div><label for="playerOneMarker">Marker</label></div>
+            <div class="markers">
+              <div class="marker notChosen" id="playerTwoX" data-marker="x"><p>X</p></div>
+              <div class="marker" id="playerTwoO" data-marker="o"><p>O</p></div>
+            </div>
+          </div>
+          
+      </div>
+      <div class="startGameButton" id="startGameButton">START GAME</div>
+      </form>
+    </div>
+    <div class="wholePage">
+      <div class="scoreboard" id="playerOneScoreboard">
+        <div class="playerNameOne" id="playerNameOne"></div>
+        <div id="playerOneScore"></div>
+        <div id="playerOneText" class="playerText">Your Turn!</div>
+      </div>
     <div class="container" id="container"></div>
+    <div class="scoreboard" id="playerTwoScoreboard">
+      <div class="playerNameTwo" id="playerNameTwo"></div>
+        <div id="playerTwoScore"></div>
+        <div id="playerTwoText" class="playerText playerTextHide">Your turn!</div>
+    </div>
+    </div>
 </body>
 </html>
